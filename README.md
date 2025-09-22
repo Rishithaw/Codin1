@@ -1,13 +1,24 @@
-# React + Vite
+# Coding Assignment 11 - Development Environment Setup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+This project sets up a development environment using **Docker** to run a React application created with **Create React App**.
+The application displays a simple heading:
 
-Currently, two official plugins are available:
+```html
+<h1>Codin 1</h1>
+# To get started
+1.Install Docker desktop
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Clone using the command "git clone" followed by the reposistory's link or download the zip file
 
-## Expanding the ESLint configuration
+3. Open the terminal and navigate to the project directory
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Codin1
+4. Build the Docker image:
+docker build -t wickramasinghe_rishitha_coding_assignment11
+
+5. Run the container with the required name and port mapping:
+docker run --name wickramasinghe_rishitha_coding_assignment11 -p 7775:7775 wickramasinghe_rishitha_coding_assignment11
+
+6. Once the container starts, open a browser of your choice and visit:
+http://127.0.0.1:7775
+(You should see the heading “Codin 1” rendered on the page.)
