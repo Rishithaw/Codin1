@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 7775
 
-CMD ["node", "server.js"]
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "7775"]

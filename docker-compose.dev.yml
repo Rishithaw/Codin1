@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  app:
+    container_name: wickramasinghe_rishitha_coding_assignment1
+    build: .
+    volumes:
+      - .:/wickramasinghe_rishitha_site
+      - /wickramasinghe_rishitha_site/node_modules
+    ports:
+      - "7775:7775"
